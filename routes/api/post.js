@@ -39,6 +39,7 @@ router.post('/api/post', isLoggedIn, async(req,res) => {
         }
     
         const newPost = await Post.create(createdPost);
+        console.log(newPost);
         res.json(newPost);
     }
     catch(e){
