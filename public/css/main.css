@@ -238,6 +238,8 @@ textarea:focus{
   
   .profileHeaderContainer .userImage-container img {
     border: 4px solid #fff;
+    width: 132px;
+    height: 132px;
   }
   
   .profileHeaderContainer .profileButtonsContainer {
