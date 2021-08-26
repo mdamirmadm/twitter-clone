@@ -18,7 +18,7 @@ router.get('/allmessages',isLoggedIn, async(req,res) => {
 })
 
 router.get('/messages', isLoggedIn, (req,res) => {
-
+    
     res.render('chatPage',{user: req.user});
 })
 
