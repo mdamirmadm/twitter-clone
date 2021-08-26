@@ -1,0 +1,44 @@
+<%-include('./../partials/header')%>
+
+ <!-- own css sheets -->
+ <link rel="stylesheet" type="text/css" href="/css/app.css">
+</head>
+<body>
+
+<div class="container mt-3">
+
+    <div class="row mt-3">
+
+        <div class="col-md-3 col-1"></div>
+        <div class="col-md-6 col-10 container-box">
+
+            <h6 class="display-6 text-center">Log In</h6>
+
+            <form action="/login" method="POST">
+
+                <%-include('../partials/flash')%>
+
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="username" name="username" placeholder="Username">
+                </div>
+
+                <div class="mb-3">
+                    <input type="password" class="form-control" id="password" name="password" placeholder="Password" value="1234">
+                </div>
+
+                <div class="mb-3">
+                    <p>Need an account? <a href="/register">Register here</a></p>
+                </div>
+
+                <div class="d-grid gap-2">
+                    <button class="btn btn-primary" type="submit">Login</button>  
+                </div>
+            </form> <!-- Form ends here -->
+            
+        </div> <!-- column ends here -->
+        
+        <div class="col-md-3 col-1"></div>
+    </div>
+</div>
+
+<%-include('./../partials/footer')%>

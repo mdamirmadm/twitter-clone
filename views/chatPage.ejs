@@ -1,0 +1,45 @@
+<%-include('./partials/header')%>
+ <!-- own css sheets -->
+ <link rel="stylesheet" type="text/css" href="/css/main.css">
+ <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="row">
+
+            <!-- Navbar -->
+            <%-include('./partials/navbar')%>
+
+            <div class="main-container col-10 col-md-8 col-lg-6">
+
+                <div class="container-title">
+                    <h1>Inbox</h1>
+                </div>
+
+                <script>
+                    var username = '<%=user.username%>'
+
+                </script>
+                
+                <div class="textarea-container">
+                    <textarea id="msg-text" rows="3" cols="30" placeholder="what's happening?"></textarea>
+                    <button id="send-msg-btn" type="submit">Send</button>
+                </div>
+
+                <ul id="all-msg-container">
+                </ul>
+
+            </div>
+        </div>
+
+
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="/js/jQuery.js"></script>
+<!-- <script src="/js/profile.js"></script> -->
+<script src="/js/chat.js"></script>
+<!-- <script src="/js/common.js"></script> -->
+<%- include("./partials/footer") %>

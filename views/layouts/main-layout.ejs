@@ -1,0 +1,49 @@
+<%-include('../partials/header')%>
+ <!-- own css sheets -->
+ <link rel="stylesheet" type="text/css" href="/css/main.css">
+</head>
+<body>
+
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <!-- Navbar -->
+            <%-include('../partials/navbar')%>
+
+            <div class="main-container col-10 col-md-8 col-lg-6">
+
+                <h1 class="fw-bold container-title">Home</h1>
+
+                <!-- Modal -->
+                <%-include('../partials/modal')%>
+
+                <div class="post-container">
+                    <div class="userImage-container">
+                        <img src="images/profilePic.png" alt="User Image">
+                    </div>
+
+                    <div class="textarea-container">
+                        <textarea id="post-text" rows="3" cols="30" placeholder="what's happening?"></textarea>
+                        <button id="postSubmitBtn">Post</button>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="postsContainer"></div>
+                </div>
+                
+            </div>
+
+            <div class="d-none d-md-block col-md-2 col-lg-4">Third Div</div>
+        </div>
+    </div>
+
+
+    <!-- axios library -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- JQuery Library -->
+    <script src="/js/JQuery.js"></script>
+    <script src="/js/common.js"></script>
+
+<%-include('../partials/footer')%>
